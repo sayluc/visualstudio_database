@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Curso.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -78,9 +79,22 @@
     <Compile Include="F_login.Designer.cs">
       <DependentUpon>F_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_newclass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_newclass.Designer.cs">
+      <DependentUpon>F_newclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_newuser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_newuser.Designer.cs">
+      <DependentUpon>F_newuser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Globais.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +104,12 @@
     <EmbeddedResource Include="F_login.resx">
       <DependentUpon>F_login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_newclass.resx">
+      <DependentUpon>F_newclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_newuser.resx">
+      <DependentUpon>F_newuser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -98,6 +118,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -112,6 +133,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-round-green-button-computer-icons-scalable-graphics-green-glossy-ball-miscellaneous-purple-color-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-red-ball-4-clip-art-number-5abc0493a9c331.1024022715222713796954.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
