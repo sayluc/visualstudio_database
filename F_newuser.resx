@@ -126,7 +126,7 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txt_name.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;txt_name.Name" xml:space="preserve">
     <value>txt_name</value>
@@ -147,7 +147,7 @@
     <value>400, 20</value>
   </data>
   <data name="txt_pass.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;txt_pass.Name" xml:space="preserve">
     <value>txt_pass</value>
@@ -351,7 +351,7 @@
     <value>110, 32</value>
   </data>
   <data name="bt_newuser.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>6</value>
   </data>
   <data name="bt_newuser.Text" xml:space="preserve">
     <value>Limpar</value>
@@ -375,7 +375,7 @@
     <value>110, 32</value>
   </data>
   <data name="bt_saveuser.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>7</value>
   </data>
   <data name="bt_saveuser.Text" xml:space="preserve">
     <value>Salvar</value>
@@ -403,7 +403,7 @@
     <value>110, 32</value>
   </data>
   <data name="bt_closeuser.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>8</value>
   </data>
   <data name="bt_closeuser.Text" xml:space="preserve">
     <value>Fechar</value>
@@ -427,7 +427,7 @@
     <value>169, 20</value>
   </data>
   <data name="nud_level.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;nud_level.Name" xml:space="preserve">
     <value>nud_level</value>
@@ -448,7 +448,7 @@
     <value>169, 21</value>
   </data>
   <data name="cmb_state.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;cmb_state.Name" xml:space="preserve">
     <value>cmb_state</value>

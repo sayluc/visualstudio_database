@@ -14,46 +14,59 @@ namespace WindowsFormsApp2
     {
         F_escola f_login;
         DataTable dt = new DataTable();
-        public F_login( F_escola f)
+
+        public F_login(F_escola f)
         {
             InitializeComponent();
             f_login = f;
         }
-        private void button2_Click(object sender, EventArgs e)
+
+        public F_login()
         {
-            this.Close();
+            InitializeComponent();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string username = tb_user.Text;
             string senha = tb_senha.Text;
+
             if (username == "" || senha == "")
             {
-
                 MessageBox.Show("Preencha todos os campos");
                 tb_user.Focus();
                 return;
             }
+            // fim do IF
 
-            string sql = "SELECT * FROM tb_usuarios WHERE username_usuario='"+username+"'AND senha_usuario='"+senha+"'";
-            dt = Database.ConsultaSql(sql);
-            if (dt.Rows.Count == 1) 
+            //string sql = "SELECT * FROM tb_usuario WHERE username_usuario='"+username+"' AND senha_usuario'"+senha+"'";
+            string sql = "SELECT * FROM tb_usuario WHERE username_usuario = '" + username + "' AND senha_usuario = '" + senha + "'";
+
+            dt = Banco.ConsultaSql(sql);
+            if (dt.Rows.Count == 1)
             {
-
-                // O ItemArray lista na ordem do bd Ex: Item 5 é o nivel do user
-                f_login.lb_nivel.Text = dt.Rows[0].ItemArray[5].ToString();
-                // Segunda forma de obter os dados do dataTable
+                f_login.lb_nivel.Text= dt.Rows[0].ItemArray[5].ToString();
                 f_login.lb_user.Text = dt.Rows[0].Field<string>("username_usuario");
                 f_login.pb_login.Image = Properties.Resources.green;
-                Globais.nivel = int.Parse(dt.Rows[0].ItemArray[5].ToString()) ;
-                // Set para a classe global
+
+                Globais.nivel = int.Parse(dt.Rows[0].Field<Int64>("nivel_usuario").ToString());
+                Globais.logado = true;
                 this.Close();
             }
+
             else
             {
-                MessageBox.Show("Login e Senha inválidos");
+                MessageBox.Show("Usuário ou Senha incorretos");
             }
-        }      
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -93,7 +93,7 @@
             // 
             // bt_newuser
             // 
-            this.bt_newuser.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.bt_newuser.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.bt_newuser, "bt_newuser");
             this.bt_newuser.Name = "bt_newuser";
             this.bt_newuser.UseVisualStyleBackColor = false;
@@ -101,7 +101,7 @@
             // 
             // bt_saveuser
             // 
-            this.bt_saveuser.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.bt_saveuser.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.bt_saveuser, "bt_saveuser");
             this.bt_saveuser.Name = "bt_saveuser";
             this.bt_saveuser.UseVisualStyleBackColor = false;
@@ -109,7 +109,7 @@
             // 
             // bt_closeuser
             // 
-            this.bt_closeuser.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.bt_closeuser.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.bt_closeuser, "bt_closeuser");
             this.bt_closeuser.Name = "bt_closeuser";
             this.bt_closeuser.UseVisualStyleBackColor = false;

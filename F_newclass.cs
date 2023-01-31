@@ -45,7 +45,7 @@ namespace WindowsFormsApp2
             curso.area_curso = txt_areaclass.Text;
             curso.status_curso = txt_stateclass.Text;
 
-            Database.NovoCurso(curso);
+            Banco.NovoCurso(curso);
         }       
     }
 }

@@ -61,6 +61,7 @@
             this.tb_user.Name = "tb_user";
             this.tb_user.Size = new System.Drawing.Size(195, 20);
             this.tb_user.TabIndex = 2;
+            this.tb_user.Text = "sayluc";
             // 
             // tb_senha
             // 
@@ -68,6 +69,7 @@
             this.tb_senha.Name = "tb_senha";
             this.tb_senha.Size = new System.Drawing.Size(195, 20);
             this.tb_senha.TabIndex = 3;
+            this.tb_senha.Text = "1234";
             this.tb_senha.UseSystemPasswordChar = true;
             // 
             // button1
