@@ -27,3 +27,6 @@ C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.F_
 C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.F_newteacher.resources
 C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.F_genuser.resources
 C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.F_aluno.resources
+C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.F_genclass.resources
+C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.F_genstudent.resources
+C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.F_genteacher.resources

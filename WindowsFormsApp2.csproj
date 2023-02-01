@@ -74,6 +74,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="F_genclass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_genclass.Designer.cs">
+      <DependentUpon>F_genclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_genstudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_genstudent.Designer.cs">
+      <DependentUpon>F_genstudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_genteacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_genteacher.Designer.cs">
+      <DependentUpon>F_genteacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_genuser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +135,15 @@
     <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_genclass.resx">
+      <DependentUpon>F_genclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_genstudent.resx">
+      <DependentUpon>F_genstudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_genteacher.resx">
+      <DependentUpon>F_genteacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_genuser.resx">
       <DependentUpon>F_genuser.cs</DependentUpon>

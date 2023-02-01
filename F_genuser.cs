@@ -21,6 +21,16 @@ namespace WindowsFormsApp2
             // f_genuser = f;
         }
 
+        private void btn_genclean_Click(object sender, EventArgs e)
+        {
+            txt_genname.Text = "";
+            txt_gennick.Text = "";
+            txt_genpass.Text = "";
+            cmb_genstate.Text = "";
+            nud_genlevel.Text = "";
+            txt_genid.Text = "";
+        }
+        
         private void btn_genupdate_Click(object sender, EventArgs e)
         {
             int linha = dgv_user.SelectedRows[0].Index;
@@ -38,21 +48,13 @@ namespace WindowsFormsApp2
             dgv_user[1, linha].Value = txt_genname.Text;
         }
 
-        private void btn_genclean_Click_1(object sender, EventArgs e)
+        private void btn_gennew_Click(object sender, EventArgs e)
         {
-            txt_genname.Text = "";
-            txt_gennick.Text = "";
-            txt_genpass.Text = "";
-            cmb_genstate.Text = "";
-            nud_genlevel.Text = "";
-            txt_genid.Text = "";
+            F_newuser f_newuser = new F_newuser();
+            f_newuser.ShowDialog();
+            dgv_user.DataSource = Banco.ObterUserID();
         }
-
-        private void btn_genclose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
+        
         private void btn_generase_Click(object sender, EventArgs e)
         {
             DialogResult resposta = MessageBox.Show("Confirmar Exclusão?", "Excluir Usuário", MessageBoxButtons.YesNo);
@@ -68,22 +70,7 @@ namespace WindowsFormsApp2
                 cmb_genstate.Text = "";
                 nud_genlevel.Text = "";
                 txt_genid.Text = "";
-            }
-        }
-
-        private void F_genuser_Load(object sender, EventArgs e)
-        {
-            dgv_user.DataSource = Banco.ObterUserID();
-
-            dgv_user.Columns[0].Width = 40;
-            dgv_user.Columns[1].Width = 180;
-        }
-
-        private void btn_gennew_Click(object sender, EventArgs e)
-        {
-            F_newuser f_newuser = new F_newuser();
-            f_newuser.ShowDialog();
-            dgv_user.DataSource = Banco.ObterUserID();
+            }    
         }
 
         private void dgv_user_SelectionChanged(object sender, EventArgs e)
@@ -104,6 +91,19 @@ namespace WindowsFormsApp2
                 cmb_genstate.Text = dt.Rows[0].Field<string>("status_usuario").ToString();
                 nud_genlevel.Text = dt.Rows[0].Field<Int64>("nivel_usuario").ToString();
             }
+        }
+
+        private void F_genuser_Load_1(object sender, EventArgs e)
+        {
+            dgv_user.DataSource = Banco.ObterUserID();
+
+            dgv_user.Columns[0].Width = 40;
+            dgv_user.Columns[1].Width = 180;
+        }
+
+        private void btn_genclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

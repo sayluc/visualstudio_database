@@ -88,6 +88,7 @@
             this.dgv_user.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_user.Size = new System.Drawing.Size(366, 357);
             this.dgv_user.TabIndex = 10;
+            this.dgv_user.SelectionChanged += new System.EventHandler(this.dgv_user_SelectionChanged);
             // 
             // cmb_genstate
             // 
@@ -112,6 +113,7 @@
             this.btn_genclean.TabIndex = 5;
             this.btn_genclean.Text = "Limpar";
             this.btn_genclean.UseVisualStyleBackColor = true;
+            this.btn_genclean.Click += new System.EventHandler(this.btn_genclean_Click);
             // 
             // btn_genupdate
             // 
@@ -121,6 +123,7 @@
             this.btn_genupdate.TabIndex = 6;
             this.btn_genupdate.Text = "Atualizar";
             this.btn_genupdate.UseVisualStyleBackColor = true;
+            this.btn_genupdate.Click += new System.EventHandler(this.btn_genupdate_Click);
             // 
             // btn_gennew
             // 
@@ -130,6 +133,7 @@
             this.btn_gennew.TabIndex = 7;
             this.btn_gennew.Text = "Novo";
             this.btn_gennew.UseVisualStyleBackColor = true;
+            this.btn_gennew.Click += new System.EventHandler(this.btn_gennew_Click);
             // 
             // btn_generase
             // 
@@ -139,6 +143,7 @@
             this.btn_generase.TabIndex = 8;
             this.btn_generase.Text = "Excluir";
             this.btn_generase.UseVisualStyleBackColor = true;
+            this.btn_generase.Click += new System.EventHandler(this.btn_generase_Click);
             // 
             // btn_genclose
             // 
@@ -148,6 +153,7 @@
             this.btn_genclose.TabIndex = 9;
             this.btn_genclose.Text = "Sair";
             this.btn_genclose.UseVisualStyleBackColor = true;
+            this.btn_genclose.Click += new System.EventHandler(this.btn_genclose_Click);
             // 
             // txt_genid
             // 
@@ -255,9 +261,12 @@
             this.Controls.Add(this.txt_genpass);
             this.Controls.Add(this.txt_gennick);
             this.Controls.Add(this.txt_genname);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "F_genuser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Novo Usuario";
+            this.Text = "Gerenciar Usuários";
+            this.Load += new System.EventHandler(this.F_genuser_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_user)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nud_genlevel)).EndInit();
             this.panel1.ResumeLayout(false);
