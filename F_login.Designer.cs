@@ -69,7 +69,7 @@
             this.tb_senha.Name = "tb_senha";
             this.tb_senha.Size = new System.Drawing.Size(195, 20);
             this.tb_senha.TabIndex = 3;
-            this.tb_senha.Text = "1234";
+            this.tb_senha.Text = "1235";
             this.tb_senha.UseSystemPasswordChar = true;
             // 
             // button1

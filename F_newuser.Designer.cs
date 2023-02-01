@@ -193,7 +193,6 @@
             this.Name = "F_newuser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Novo Usuario";
-            this.Load += new System.EventHandler(this.F_newuser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nud_level)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

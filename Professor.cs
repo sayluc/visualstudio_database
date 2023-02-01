@@ -8,7 +8,7 @@ namespace WindowsFormsApp2
 {
     internal class Professor
     {
-        // Conforme temos registrado no banco de dados
+        // Conforme temos registrado no BancoDeDados
         public Int32 id_professor = 0;
         public string nome_professor = "";
         public string area_professor = "";

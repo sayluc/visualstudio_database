@@ -8,7 +8,7 @@ namespace WindowsFormsApp2
 {
     internal class Usuario
     {
-        // Conforme temos registrado no banco de dados
+        // Conforme temos registrado no BancoDeDados
         public Int32 id_usuario = 0;
         public string nome_usuario = "";
         public string username_usuario = "";

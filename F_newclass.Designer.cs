@@ -136,7 +136,6 @@
             this.Name = "F_newclass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Novo Curso";
-            this.Load += new System.EventHandler(this.F_newclass_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -20,11 +20,6 @@ namespace WindowsFormsApp2
             f_newclass = f;
         }
 
-        private void F_newclass_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_classclose_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -41,16 +41,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_genid = new System.Windows.Forms.TextBox();
-            this.nud_genlevel = new System.Windows.Forms.NumericUpDown();
-            this.cmb_genstate = new System.Windows.Forms.ComboBox();
-            this.dgv_user = new System.Windows.Forms.DataGridView();
-            this.txt_genpass = new System.Windows.Forms.TextBox();
-            this.txt_gennick = new System.Windows.Forms.TextBox();
-            this.txt_genname = new System.Windows.Forms.TextBox();
+            this.txt_genidteacher = new System.Windows.Forms.TextBox();
+            this.nud_genlevelteacher = new System.Windows.Forms.NumericUpDown();
+            this.cmb_genstateteacher = new System.Windows.Forms.ComboBox();
+            this.dgv_teacher = new System.Windows.Forms.DataGridView();
+            this.txt_genpassteacher = new System.Windows.Forms.TextBox();
+            this.txt_gennickteacher = new System.Windows.Forms.TextBox();
+            this.txt_gennameteacher = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_genlevel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_user)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_genlevelteacher)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_teacher)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,6 +75,7 @@
             this.btn_genclose.TabIndex = 9;
             this.btn_genclose.Text = "Sair";
             this.btn_genclose.UseVisualStyleBackColor = true;
+            this.btn_genclose.Click += new System.EventHandler(this.btn_genclose_Click);
             // 
             // btn_generase
             // 
@@ -84,6 +85,7 @@
             this.btn_generase.TabIndex = 8;
             this.btn_generase.Text = "Excluir";
             this.btn_generase.UseVisualStyleBackColor = true;
+            this.btn_generase.Click += new System.EventHandler(this.btn_generase_Click);
             // 
             // btn_gennew
             // 
@@ -93,6 +95,7 @@
             this.btn_gennew.TabIndex = 7;
             this.btn_gennew.Text = "Novo";
             this.btn_gennew.UseVisualStyleBackColor = true;
+            this.btn_gennew.Click += new System.EventHandler(this.btn_gennew_Click);
             // 
             // btn_genupdate
             // 
@@ -102,6 +105,7 @@
             this.btn_genupdate.TabIndex = 6;
             this.btn_genupdate.Text = "Atualizar";
             this.btn_genupdate.UseVisualStyleBackColor = true;
+            this.btn_genupdate.Click += new System.EventHandler(this.btn_genupdate_Click);
             // 
             // btn_genclean
             // 
@@ -111,6 +115,7 @@
             this.btn_genclean.TabIndex = 5;
             this.btn_genclean.Text = "Limpar";
             this.btn_genclean.UseVisualStyleBackColor = true;
+            this.btn_genclean.Click += new System.EventHandler(this.btn_genclean_Click);
             // 
             // label7
             // 
@@ -175,64 +180,65 @@
             this.label1.TabIndex = 43;
             this.label1.Text = "Nome";
             // 
-            // txt_genid
+            // txt_genidteacher
             // 
-            this.txt_genid.Location = new System.Drawing.Point(29, 395);
-            this.txt_genid.Name = "txt_genid";
-            this.txt_genid.ReadOnly = true;
-            this.txt_genid.Size = new System.Drawing.Size(100, 20);
-            this.txt_genid.TabIndex = 42;
+            this.txt_genidteacher.Location = new System.Drawing.Point(29, 395);
+            this.txt_genidteacher.Name = "txt_genidteacher";
+            this.txt_genidteacher.ReadOnly = true;
+            this.txt_genidteacher.Size = new System.Drawing.Size(100, 20);
+            this.txt_genidteacher.TabIndex = 42;
             // 
-            // nud_genlevel
+            // nud_genlevelteacher
             // 
-            this.nud_genlevel.Location = new System.Drawing.Point(225, 265);
-            this.nud_genlevel.Name = "nud_genlevel";
-            this.nud_genlevel.Size = new System.Drawing.Size(159, 20);
-            this.nud_genlevel.TabIndex = 40;
+            this.nud_genlevelteacher.Location = new System.Drawing.Point(225, 265);
+            this.nud_genlevelteacher.Name = "nud_genlevelteacher";
+            this.nud_genlevelteacher.Size = new System.Drawing.Size(159, 20);
+            this.nud_genlevelteacher.TabIndex = 40;
             // 
-            // cmb_genstate
+            // cmb_genstateteacher
             // 
-            this.cmb_genstate.FormattingEnabled = true;
-            this.cmb_genstate.Location = new System.Drawing.Point(29, 265);
-            this.cmb_genstate.Name = "cmb_genstate";
-            this.cmb_genstate.Size = new System.Drawing.Size(173, 21);
-            this.cmb_genstate.TabIndex = 39;
+            this.cmb_genstateteacher.FormattingEnabled = true;
+            this.cmb_genstateteacher.Location = new System.Drawing.Point(29, 265);
+            this.cmb_genstateteacher.Name = "cmb_genstateteacher";
+            this.cmb_genstateteacher.Size = new System.Drawing.Size(173, 21);
+            this.cmb_genstateteacher.TabIndex = 39;
             // 
-            // dgv_user
+            // dgv_teacher
             // 
-            this.dgv_user.AllowUserToAddRows = false;
-            this.dgv_user.AllowUserToDeleteRows = false;
-            this.dgv_user.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_user.EnableHeadersVisualStyles = false;
-            this.dgv_user.Location = new System.Drawing.Point(415, 58);
-            this.dgv_user.MultiSelect = false;
-            this.dgv_user.Name = "dgv_user";
-            this.dgv_user.ReadOnly = true;
-            this.dgv_user.RowHeadersVisible = false;
-            this.dgv_user.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_user.Size = new System.Drawing.Size(371, 357);
-            this.dgv_user.TabIndex = 41;
+            this.dgv_teacher.AllowUserToAddRows = false;
+            this.dgv_teacher.AllowUserToDeleteRows = false;
+            this.dgv_teacher.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_teacher.EnableHeadersVisualStyles = false;
+            this.dgv_teacher.Location = new System.Drawing.Point(415, 58);
+            this.dgv_teacher.MultiSelect = false;
+            this.dgv_teacher.Name = "dgv_teacher";
+            this.dgv_teacher.ReadOnly = true;
+            this.dgv_teacher.RowHeadersVisible = false;
+            this.dgv_teacher.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_teacher.Size = new System.Drawing.Size(371, 357);
+            this.dgv_teacher.TabIndex = 41;
+            this.dgv_teacher.SelectionChanged += new System.EventHandler(this.dgv_teacher_SelectionChanged);
             // 
-            // txt_genpass
+            // txt_genpassteacher
             // 
-            this.txt_genpass.Location = new System.Drawing.Point(29, 198);
-            this.txt_genpass.Name = "txt_genpass";
-            this.txt_genpass.Size = new System.Drawing.Size(355, 20);
-            this.txt_genpass.TabIndex = 38;
+            this.txt_genpassteacher.Location = new System.Drawing.Point(29, 198);
+            this.txt_genpassteacher.Name = "txt_genpassteacher";
+            this.txt_genpassteacher.Size = new System.Drawing.Size(355, 20);
+            this.txt_genpassteacher.TabIndex = 38;
             // 
-            // txt_gennick
+            // txt_gennickteacher
             // 
-            this.txt_gennick.Location = new System.Drawing.Point(29, 128);
-            this.txt_gennick.Name = "txt_gennick";
-            this.txt_gennick.Size = new System.Drawing.Size(355, 20);
-            this.txt_gennick.TabIndex = 37;
+            this.txt_gennickteacher.Location = new System.Drawing.Point(29, 128);
+            this.txt_gennickteacher.Name = "txt_gennickteacher";
+            this.txt_gennickteacher.Size = new System.Drawing.Size(355, 20);
+            this.txt_gennickteacher.TabIndex = 37;
             // 
-            // txt_genname
+            // txt_gennameteacher
             // 
-            this.txt_genname.Location = new System.Drawing.Point(29, 58);
-            this.txt_genname.Name = "txt_genname";
-            this.txt_genname.Size = new System.Drawing.Size(355, 20);
-            this.txt_genname.TabIndex = 36;
+            this.txt_gennameteacher.Location = new System.Drawing.Point(29, 58);
+            this.txt_gennameteacher.Name = "txt_gennameteacher";
+            this.txt_gennameteacher.Size = new System.Drawing.Size(355, 20);
+            this.txt_gennameteacher.TabIndex = 36;
             // 
             // F_genteacher
             // 
@@ -248,22 +254,22 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_genid);
-            this.Controls.Add(this.nud_genlevel);
-            this.Controls.Add(this.cmb_genstate);
-            this.Controls.Add(this.dgv_user);
-            this.Controls.Add(this.txt_genpass);
-            this.Controls.Add(this.txt_gennick);
-            this.Controls.Add(this.txt_genname);
+            this.Controls.Add(this.txt_genidteacher);
+            this.Controls.Add(this.nud_genlevelteacher);
+            this.Controls.Add(this.cmb_genstateteacher);
+            this.Controls.Add(this.dgv_teacher);
+            this.Controls.Add(this.txt_genpassteacher);
+            this.Controls.Add(this.txt_gennickteacher);
+            this.Controls.Add(this.txt_gennameteacher);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "F_genteacher";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "F_genteacher";
+            this.Text = "Gerenciar Professores";
             this.Load += new System.EventHandler(this.F_genteacher_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nud_genlevel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_user)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_genlevelteacher)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_teacher)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,12 +290,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_genid;
-        private System.Windows.Forms.NumericUpDown nud_genlevel;
-        private System.Windows.Forms.ComboBox cmb_genstate;
-        private System.Windows.Forms.DataGridView dgv_user;
-        private System.Windows.Forms.TextBox txt_genpass;
-        private System.Windows.Forms.TextBox txt_gennick;
-        private System.Windows.Forms.TextBox txt_genname;
+        private System.Windows.Forms.TextBox txt_genidteacher;
+        private System.Windows.Forms.NumericUpDown nud_genlevelteacher;
+        private System.Windows.Forms.ComboBox cmb_genstateteacher;
+        private System.Windows.Forms.DataGridView dgv_teacher;
+        private System.Windows.Forms.TextBox txt_genpassteacher;
+        private System.Windows.Forms.TextBox txt_gennickteacher;
+        private System.Windows.Forms.TextBox txt_gennameteacher;
     }
 }

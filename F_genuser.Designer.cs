@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_genname = new System.Windows.Forms.TextBox();
-            this.txt_gennick = new System.Windows.Forms.TextBox();
-            this.txt_genpass = new System.Windows.Forms.TextBox();
+            this.txt_gennameuser = new System.Windows.Forms.TextBox();
+            this.txt_gennickuser = new System.Windows.Forms.TextBox();
+            this.txt_genpassuser = new System.Windows.Forms.TextBox();
             this.dgv_user = new System.Windows.Forms.DataGridView();
-            this.cmb_genstate = new System.Windows.Forms.ComboBox();
-            this.nud_genlevel = new System.Windows.Forms.NumericUpDown();
+            this.cmb_genstateuser = new System.Windows.Forms.ComboBox();
+            this.nud_genleveluser = new System.Windows.Forms.NumericUpDown();
             this.btn_genclean = new System.Windows.Forms.Button();
             this.btn_genupdate = new System.Windows.Forms.Button();
             this.btn_gennew = new System.Windows.Forms.Button();
             this.btn_generase = new System.Windows.Forms.Button();
             this.btn_genclose = new System.Windows.Forms.Button();
-            this.txt_genid = new System.Windows.Forms.TextBox();
+            this.txt_geniduser = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,30 +49,30 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_user)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_genlevel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_genleveluser)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txt_genname
+            // txt_gennameuser
             // 
-            this.txt_genname.Location = new System.Drawing.Point(32, 57);
-            this.txt_genname.Name = "txt_genname";
-            this.txt_genname.Size = new System.Drawing.Size(350, 20);
-            this.txt_genname.TabIndex = 0;
+            this.txt_gennameuser.Location = new System.Drawing.Point(32, 57);
+            this.txt_gennameuser.Name = "txt_gennameuser";
+            this.txt_gennameuser.Size = new System.Drawing.Size(350, 20);
+            this.txt_gennameuser.TabIndex = 0;
             // 
-            // txt_gennick
+            // txt_gennickuser
             // 
-            this.txt_gennick.Location = new System.Drawing.Point(32, 127);
-            this.txt_gennick.Name = "txt_gennick";
-            this.txt_gennick.Size = new System.Drawing.Size(350, 20);
-            this.txt_gennick.TabIndex = 1;
+            this.txt_gennickuser.Location = new System.Drawing.Point(32, 127);
+            this.txt_gennickuser.Name = "txt_gennickuser";
+            this.txt_gennickuser.Size = new System.Drawing.Size(350, 20);
+            this.txt_gennickuser.TabIndex = 1;
             // 
-            // txt_genpass
+            // txt_genpassuser
             // 
-            this.txt_genpass.Location = new System.Drawing.Point(32, 197);
-            this.txt_genpass.Name = "txt_genpass";
-            this.txt_genpass.Size = new System.Drawing.Size(350, 20);
-            this.txt_genpass.TabIndex = 2;
+            this.txt_genpassuser.Location = new System.Drawing.Point(32, 197);
+            this.txt_genpassuser.Name = "txt_genpassuser";
+            this.txt_genpassuser.Size = new System.Drawing.Size(350, 20);
+            this.txt_genpassuser.TabIndex = 2;
             // 
             // dgv_user
             // 
@@ -90,20 +90,20 @@
             this.dgv_user.TabIndex = 10;
             this.dgv_user.SelectionChanged += new System.EventHandler(this.dgv_user_SelectionChanged);
             // 
-            // cmb_genstate
+            // cmb_genstateuser
             // 
-            this.cmb_genstate.FormattingEnabled = true;
-            this.cmb_genstate.Location = new System.Drawing.Point(32, 264);
-            this.cmb_genstate.Name = "cmb_genstate";
-            this.cmb_genstate.Size = new System.Drawing.Size(168, 21);
-            this.cmb_genstate.TabIndex = 3;
+            this.cmb_genstateuser.FormattingEnabled = true;
+            this.cmb_genstateuser.Location = new System.Drawing.Point(32, 264);
+            this.cmb_genstateuser.Name = "cmb_genstateuser";
+            this.cmb_genstateuser.Size = new System.Drawing.Size(168, 21);
+            this.cmb_genstateuser.TabIndex = 3;
             // 
-            // nud_genlevel
+            // nud_genleveluser
             // 
-            this.nud_genlevel.Location = new System.Drawing.Point(228, 264);
-            this.nud_genlevel.Name = "nud_genlevel";
-            this.nud_genlevel.Size = new System.Drawing.Size(154, 20);
-            this.nud_genlevel.TabIndex = 4;
+            this.nud_genleveluser.Location = new System.Drawing.Point(228, 264);
+            this.nud_genleveluser.Name = "nud_genleveluser";
+            this.nud_genleveluser.Size = new System.Drawing.Size(154, 20);
+            this.nud_genleveluser.TabIndex = 4;
             // 
             // btn_genclean
             // 
@@ -155,13 +155,13 @@
             this.btn_genclose.UseVisualStyleBackColor = true;
             this.btn_genclose.Click += new System.EventHandler(this.btn_genclose_Click);
             // 
-            // txt_genid
+            // txt_geniduser
             // 
-            this.txt_genid.Location = new System.Drawing.Point(32, 394);
-            this.txt_genid.Name = "txt_genid";
-            this.txt_genid.ReadOnly = true;
-            this.txt_genid.Size = new System.Drawing.Size(95, 20);
-            this.txt_genid.TabIndex = 12;
+            this.txt_geniduser.Location = new System.Drawing.Point(32, 394);
+            this.txt_geniduser.Name = "txt_geniduser";
+            this.txt_geniduser.ReadOnly = true;
+            this.txt_geniduser.Size = new System.Drawing.Size(95, 20);
+            this.txt_geniduser.TabIndex = 12;
             // 
             // label1
             // 
@@ -254,13 +254,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_genid);
-            this.Controls.Add(this.nud_genlevel);
-            this.Controls.Add(this.cmb_genstate);
+            this.Controls.Add(this.txt_geniduser);
+            this.Controls.Add(this.nud_genleveluser);
+            this.Controls.Add(this.cmb_genstateuser);
             this.Controls.Add(this.dgv_user);
-            this.Controls.Add(this.txt_genpass);
-            this.Controls.Add(this.txt_gennick);
-            this.Controls.Add(this.txt_genname);
+            this.Controls.Add(this.txt_genpassuser);
+            this.Controls.Add(this.txt_gennickuser);
+            this.Controls.Add(this.txt_gennameuser);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "F_genuser";
@@ -268,7 +268,7 @@
             this.Text = "Gerenciar Usuários";
             this.Load += new System.EventHandler(this.F_genuser_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_user)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_genlevel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nud_genleveluser)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -277,18 +277,18 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txt_genname;
-        private System.Windows.Forms.TextBox txt_gennick;
-        private System.Windows.Forms.TextBox txt_genpass;
+        private System.Windows.Forms.TextBox txt_gennameuser;
+        private System.Windows.Forms.TextBox txt_gennickuser;
+        private System.Windows.Forms.TextBox txt_genpassuser;
         private System.Windows.Forms.DataGridView dgv_user;
-        private System.Windows.Forms.ComboBox cmb_genstate;
-        private System.Windows.Forms.NumericUpDown nud_genlevel;
+        private System.Windows.Forms.ComboBox cmb_genstateuser;
+        private System.Windows.Forms.NumericUpDown nud_genleveluser;
         private System.Windows.Forms.Button btn_genclean;
         private System.Windows.Forms.Button btn_genupdate;
         private System.Windows.Forms.Button btn_gennew;
         private System.Windows.Forms.Button btn_generase;
         private System.Windows.Forms.Button btn_genclose;
-        private System.Windows.Forms.TextBox txt_genid;
+        private System.Windows.Forms.TextBox txt_geniduser;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

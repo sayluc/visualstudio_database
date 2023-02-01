@@ -26,11 +26,6 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             string username = tb_user.Text;
@@ -42,12 +37,12 @@ namespace WindowsFormsApp2
                 tb_user.Focus();
                 return;
             }
-            // fim do IF
+            // Fim do if
 
             //string sql = "SELECT * FROM tb_usuario WHERE username_usuario='"+username+"' AND senha_usuario'"+senha+"'";
             string sql = "SELECT * FROM tb_usuario WHERE username_usuario = '" + username + "' AND senha_usuario = '" + senha + "'";
-
             dt = Banco.ConsultaSql(sql);
+
             if (dt.Rows.Count == 1)
             {
                 f_login.lb_nivel.Text= dt.Rows[0].ItemArray[5].ToString();
@@ -58,12 +53,12 @@ namespace WindowsFormsApp2
                 Globais.logado = true;
                 this.Close();
             }
-
             else
             {
-                MessageBox.Show("Usuário ou Senha incorretos");
+                MessageBox.Show("Usuário ou Senha inválidos");
             }
         }
+
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();

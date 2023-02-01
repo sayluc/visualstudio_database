@@ -12,7 +12,7 @@ namespace WindowsFormsApp2
         public static Boolean logado = false;
         public static int nivel = 0;
 
-        // Estrutura para criar um caminho relativo no BD
+        // Estrutura para criar um caminho relativo no BancoDeDados
         // O caminho relativo de "System.Environment.CurrentDirectory" leva até a pasta
         public static string caminho = System.Environment.CurrentDirectory;
         public static string nomeDatabase = "bd_escola.db";

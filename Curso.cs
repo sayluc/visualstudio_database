@@ -8,7 +8,7 @@ namespace WindowsFormsApp2
 {
     internal class Curso
     {
-        // Conforme temos registrado no banco de dados
+        // Conforme temos registrado no BancoDeDados
         public Int32 id_curso = 0;
         public string nome_curso = "";
         public string area_curso = "";

@@ -6,17 +6,9 @@ namespace WindowsFormsApp2
 {
     public partial class F_newuser : Form
     {
-        //F_escola f_newuser;
-        //DataTable dt = new DataTable();
         public F_newuser()
         {
             InitializeComponent();
-            // f_newuser = f;
-        }
-
-        private void F_newuser_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void bt_closeuser_Click(object sender, EventArgs e)

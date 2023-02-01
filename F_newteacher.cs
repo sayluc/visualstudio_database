@@ -20,11 +20,6 @@ namespace WindowsFormsApp2
             f_newteacher = f;
         }
 
-        private void F_newteacher_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_closet_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -20,11 +20,6 @@ namespace WindowsFormsApp2
             f_aluno = f;
         }
 
-        private void F_aluno_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_closestud_Click(object sender, EventArgs e)
         {
             this.Close();

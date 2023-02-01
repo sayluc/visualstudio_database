@@ -34,7 +34,7 @@ namespace WindowsFormsApp2
             }
             else
             {
-                MessageBox.Show("Nivel de acesso baixo, permissão negada!");
+                MessageBox.Show("Nivel de acesso baixo, permissão negada");
             }       
         }
 

@@ -20,8 +20,10 @@ namespace WindowsFormsApp2
 
             conex.Open();
             return conex;
-            //Fim do metodo ConectarBanco
+            
         }
+        //Fim do método ConectarBanco
+
         public static DataTable RelacaoUser()
         {
             SQLiteDataAdapter da = null;
@@ -43,7 +45,8 @@ namespace WindowsFormsApp2
             {
                 throw ex;
             }
-        } // metodo generico para consultas no BD
+        } 
+        // Método genérico para consultar o BancoDeDados
 
         public static DataTable ConsultaSql(string sql)
         {
@@ -62,14 +65,14 @@ namespace WindowsFormsApp2
                     return dt;
                 }
             }
-
             catch (Exception ex)
             {
                 throw ex;
             }
         }
 
-        public static void Dml(string sql, string msgOk = null, string msgErro = null) // Data Manipulation Language (INSERT - UPDADE - DELETE)
+        // Data Manipulation Language (INSERT - UPDADE - DELETE)
+        public static void Dml(string sql, string msgOk = null, string msgErro = null) 
         {
             SQLiteDataAdapter da = null;
             DataTable dt = new DataTable();
@@ -79,7 +82,7 @@ namespace WindowsFormsApp2
                 var cmd = vcon.CreateCommand();
                 cmd.CommandText = sql;
                 da = new SQLiteDataAdapter(cmd.CommandText, vcon);
-                //o Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
+                // O Data adapter abaixo preeche o DataTable com as informações retornadas do banco de dados
                 cmd.ExecuteNonQuery();
                 vcon.Close();
                 if (msgOk != null) 
@@ -93,6 +96,7 @@ namespace WindowsFormsApp2
                 throw ex;
             }
         }
+
         public static void NovoUser(Usuario user)
         {
             if (UsernameExiste(user) == true)
@@ -119,9 +123,9 @@ namespace WindowsFormsApp2
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao inserir novo usuario .: " + ex.Message);
-                //throw ex;
             }
         }
+
         public static bool UsernameExiste(Usuario user)
         {
             bool resposta;
@@ -145,6 +149,7 @@ namespace WindowsFormsApp2
             vcon.Close();
             return resposta;
         }
+
         public static void NovoCurso(Curso curso)
         {
             try
@@ -162,7 +167,6 @@ namespace WindowsFormsApp2
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao inserir novo curso .: " + ex.Message);
-                //throw ex;
             }
         }
 
@@ -185,7 +189,6 @@ namespace WindowsFormsApp2
             {
                 resposta = false;
             }
-
             vcon.Close();
             return resposta;
         }
@@ -212,9 +215,9 @@ namespace WindowsFormsApp2
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao inserir novo professor .: " + ex.Message);
-                //throw ex;
             }
         }
+
         public static bool AlunoTelefoneExiste(Aluno aluno)
         {
             bool resposta;
@@ -237,6 +240,7 @@ namespace WindowsFormsApp2
             vcon.Close();
             return resposta;
         }
+
         public static void NovoAluno(Aluno aluno)
         {
             if (AlunoTelefoneExiste(aluno) == true)
@@ -259,11 +263,9 @@ namespace WindowsFormsApp2
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao inserir novo aluno .: " + ex.Message);
-                //throw ex;
             }
-            //fim das funções genéricas
-
         }
+
         public static DataTable ObterUserID()
         {
 
@@ -343,6 +345,7 @@ namespace WindowsFormsApp2
             {
                 throw ex;
             }
-        }// Fim das funções genéricas
+        }
+        // Fim das funções genéricas
     }
 }

@@ -136,7 +136,6 @@
             this.Name = "F_newteacher";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Professores";
-            this.Load += new System.EventHandler(this.F_newteacher_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
