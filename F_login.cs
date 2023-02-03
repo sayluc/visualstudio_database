@@ -47,7 +47,7 @@ namespace WindowsFormsApp2
             {
                 f_login.lb_nivel.Text= dt.Rows[0].ItemArray[5].ToString();
                 f_login.lb_user.Text = dt.Rows[0].Field<string>("username_usuario");
-                f_login.pb_login.Image = Properties.Resources.green;
+                f_login.pb_login.Image = Properties.Resources.bverde;
 
                 Globais.nivel = int.Parse(dt.Rows[0].Field<Int64>("nivel_usuario").ToString());
                 Globais.logado = true;
@@ -62,6 +62,11 @@ namespace WindowsFormsApp2
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void F_login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

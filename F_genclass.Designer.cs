@@ -36,20 +36,15 @@
             this.btn_genclean = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_genidclass = new System.Windows.Forms.TextBox();
-            this.nud_genlevelclass = new System.Windows.Forms.NumericUpDown();
             this.cmb_genstateclass = new System.Windows.Forms.ComboBox();
             this.dgv_class = new System.Windows.Forms.DataGridView();
-            this.txt_genpassclass = new System.Windows.Forms.TextBox();
-            this.txt_gennickclass = new System.Windows.Forms.TextBox();
+            this.txt_genareaclass = new System.Windows.Forms.TextBox();
             this.txt_gennameclass = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nud_genlevelclass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_class)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,11 +115,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(29, 288);
+            this.label7.Location = new System.Drawing.Point(38, 270);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 13);
+            this.label7.Size = new System.Drawing.Size(137, 13);
             this.label7.TabIndex = 34;
-            this.label7.Text = "A: Ativo B: Bloqueado";
+            this.label7.Text = "D: Disponível E: Encerrado";
             // 
             // label6
             // 
@@ -135,19 +130,10 @@
             this.label6.TabIndex = 33;
             this.label6.Text = "ID";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(226, 248);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "Nivel";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 248);
+            this.label4.Location = new System.Drawing.Point(29, 230);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 31;
@@ -156,25 +142,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 181);
+            this.label3.Location = new System.Drawing.Point(29, 161);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.Size = new System.Drawing.Size(29, 13);
             this.label3.TabIndex = 30;
-            this.label3.Text = "Senha";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 111);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Username";
+            this.label3.Text = "Area";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 41);
+            this.label1.Location = new System.Drawing.Point(29, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 28;
@@ -186,22 +163,15 @@
             this.txt_genidclass.Name = "txt_genidclass";
             this.txt_genidclass.ReadOnly = true;
             this.txt_genidclass.Size = new System.Drawing.Size(96, 20);
-            this.txt_genidclass.TabIndex = 27;
-            // 
-            // nud_genlevelclass
-            // 
-            this.nud_genlevelclass.Location = new System.Drawing.Point(228, 264);
-            this.nud_genlevelclass.Name = "nud_genlevelclass";
-            this.nud_genlevelclass.Size = new System.Drawing.Size(155, 20);
-            this.nud_genlevelclass.TabIndex = 25;
+            this.txt_genidclass.TabIndex = 4;
             // 
             // cmb_genstateclass
             // 
             this.cmb_genstateclass.FormattingEnabled = true;
-            this.cmb_genstateclass.Location = new System.Drawing.Point(32, 264);
+            this.cmb_genstateclass.Location = new System.Drawing.Point(32, 246);
             this.cmb_genstateclass.Name = "cmb_genstateclass";
             this.cmb_genstateclass.Size = new System.Drawing.Size(169, 21);
-            this.cmb_genstateclass.TabIndex = 24;
+            this.cmb_genstateclass.TabIndex = 3;
             // 
             // dgv_class
             // 
@@ -216,29 +186,22 @@
             this.dgv_class.RowHeadersVisible = false;
             this.dgv_class.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_class.Size = new System.Drawing.Size(367, 357);
-            this.dgv_class.TabIndex = 26;
+            this.dgv_class.TabIndex = 10;
             this.dgv_class.SelectionChanged += new System.EventHandler(this.dgv_user_SelectionChanged);
             // 
-            // txt_genpassclass
+            // txt_genareaclass
             // 
-            this.txt_genpassclass.Location = new System.Drawing.Point(32, 197);
-            this.txt_genpassclass.Name = "txt_genpassclass";
-            this.txt_genpassclass.Size = new System.Drawing.Size(351, 20);
-            this.txt_genpassclass.TabIndex = 23;
-            // 
-            // txt_gennickclass
-            // 
-            this.txt_gennickclass.Location = new System.Drawing.Point(32, 127);
-            this.txt_gennickclass.Name = "txt_gennickclass";
-            this.txt_gennickclass.Size = new System.Drawing.Size(351, 20);
-            this.txt_gennickclass.TabIndex = 22;
+            this.txt_genareaclass.Location = new System.Drawing.Point(32, 177);
+            this.txt_genareaclass.Name = "txt_genareaclass";
+            this.txt_genareaclass.Size = new System.Drawing.Size(351, 20);
+            this.txt_genareaclass.TabIndex = 1;
             // 
             // txt_gennameclass
             // 
-            this.txt_gennameclass.Location = new System.Drawing.Point(32, 57);
+            this.txt_gennameclass.Location = new System.Drawing.Point(32, 107);
             this.txt_gennameclass.Name = "txt_gennameclass";
             this.txt_gennameclass.Size = new System.Drawing.Size(351, 20);
-            this.txt_gennameclass.TabIndex = 21;
+            this.txt_gennameclass.TabIndex = 0;
             // 
             // F_genclass
             // 
@@ -249,17 +212,13 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_genidclass);
-            this.Controls.Add(this.nud_genlevelclass);
             this.Controls.Add(this.cmb_genstateclass);
             this.Controls.Add(this.dgv_class);
-            this.Controls.Add(this.txt_genpassclass);
-            this.Controls.Add(this.txt_gennickclass);
+            this.Controls.Add(this.txt_genareaclass);
             this.Controls.Add(this.txt_gennameclass);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -268,7 +227,6 @@
             this.Text = "Gerenciar Cursos";
             this.Load += new System.EventHandler(this.F_genclass_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nud_genlevelclass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_class)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -285,17 +243,13 @@
         private System.Windows.Forms.Button btn_genclean;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_genidclass;
-        private System.Windows.Forms.NumericUpDown nud_genlevelclass;
         private System.Windows.Forms.ComboBox cmb_genstateclass;
         private System.Windows.Forms.DataGridView dgv_class;
-        private System.Windows.Forms.TextBox txt_genpassclass;
-        private System.Windows.Forms.TextBox txt_gennickclass;
+        private System.Windows.Forms.TextBox txt_genareaclass;
         private System.Windows.Forms.TextBox txt_gennameclass;
     }
 }

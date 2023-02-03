@@ -14,6 +14,6 @@ namespace WindowsFormsApp2
         public string curso_aluno = "";
         public string periodo_aluno = "";
         public string sobrenome_aluno = "";
-        public Int32 telefone_aluno = 0;
+        public string telefone_aluno = "";
     }
 }

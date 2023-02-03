@@ -12,12 +12,9 @@ namespace WindowsFormsApp2
 {
     public partial class F_newteacher : Form
     {
-        F_escola f_newteacher;
-        DataTable dt = new DataTable();
-        public F_newteacher(F_escola f)
+        public F_newteacher()
         {
             InitializeComponent();
-            f_newteacher = f;
         }
 
         private void btn_closet_Click(object sender, EventArgs e)
@@ -28,8 +25,11 @@ namespace WindowsFormsApp2
         private void btn_cleant_Click(object sender, EventArgs e)
         {
             txt_namet.Clear();
+            txt_nickt.Clear();
             txt_areat.Clear();
-            txt_floort.Clear();
+            txt_setort.Clear();
+            txt_phonet.Clear();
+            txt_turnt.Clear();
         }
 
         private void btn_savet_Click(object sender, EventArgs e)
@@ -37,8 +37,11 @@ namespace WindowsFormsApp2
             Professor professor = new Professor();
 
             professor.nome_professor = txt_namet.Text;
+            professor.sobrenome_professor = txt_nickt.Text;
             professor.area_professor = txt_areat.Text;
-            professor.setor_professor = txt_floort.Text;
+            professor.setor_professor = txt_setort.Text;
+            professor.telefone_professor = txt_phonet.Text;
+            professor.turno_professor = txt_turnt.Text;
 
             Banco.NovoProfessor(professor);
         }

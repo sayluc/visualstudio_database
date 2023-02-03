@@ -38,5 +38,10 @@ namespace WindowsFormsApp2
 
             Banco.NovoUser(usuario);
         }
+
+        private void cmb_state_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

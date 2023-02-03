@@ -11,10 +11,10 @@ namespace WindowsFormsApp2
         // Conforme temos registrado no BancoDeDados
         public Int32 id_professor = 0;
         public string nome_professor = "";
-        public string area_professor = "";
-        public string setor_professor = "";
         public string sobrenome_professor = "";
-        public Int32 telefone_professor = 0;
+        public string area_professor = "";
+        public string setor_professor = "";   
+        public string telefone_professor = "";
         public string turno_professor = "";
     }
 }

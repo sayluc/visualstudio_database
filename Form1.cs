@@ -25,7 +25,31 @@ namespace WindowsFormsApp2
             f_login.ShowDialog();
         }
 
-        private void novoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void gerenciamentoUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_genuser f_genuser = new F_genuser();
+            f_genuser.ShowDialog();
+        }
+
+        private void gerenciamentoAlunosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_genstudent f_genstudent = new F_genstudent();
+            f_genstudent.ShowDialog();
+        }
+
+        private void gerenciamentoProfessoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_genteacher f_genuser = new F_genteacher();
+            f_genuser.ShowDialog();
+        }
+
+        private void gerenciamentoCursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_genclass f_genuser = new F_genclass();
+            f_genuser.ShowDialog();
+        }
+
+        private void novoUsuario_Click(object sender, EventArgs e)
         {
             if (Globais.nivel >= 3)
             {
@@ -35,31 +59,57 @@ namespace WindowsFormsApp2
             else
             {
                 MessageBox.Show("Nivel de acesso baixo, permissão negada");
-            }       
+            }
         }
 
-        private void novoCursoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void novoAluno_Click(object sender, EventArgs e)
         {
-            F_newclass f_newclass = new F_newclass(this);
-            f_newclass.ShowDialog();
+            if (Globais.nivel >= 3)
+            {
+                F_newstudent f_newstudent = new F_newstudent();
+                f_newstudent.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Nivel de acesso baixo, permissão negada");
+            }
         }
 
-        private void novoToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void novoProfessor_Click(object sender, EventArgs e)
         {
-            F_aluno f_aluno = new F_aluno(this);
-            f_aluno.ShowDialog();
+            if (Globais.nivel >= 3)
+            {
+                F_newteacher f_newteacher = new F_newteacher();
+                f_newteacher.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Nivel de acesso baixo, permissão negada");
+            }
         }
 
-        private void cadastrarProfessorToolStripMenuItem_Click(object sender, EventArgs e)
+        private void novoCurso_Click(object sender, EventArgs e)
         {
-            F_newteacher f_newteacher = new F_newteacher(this);
-            f_newteacher.ShowDialog();
+            if (Globais.nivel >= 3)
+            {
+                F_newclass f_newclass = new F_newclass();
+                f_newclass.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Nivel de acesso baixo, permissão negada");
+            }  
         }
 
-        private void gerenciamentoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void logoffToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            F_genuser f_genuser = new F_genuser(this);
-            f_genuser.ShowDialog();
+            if (MessageBox.Show("Tem certeza que desaja sair? ", "Sair", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                lb_nivel.Text = "--"; 
+                lb_user.Text = "--"; 
+                pb_login.Image = Properties.Resources.bamarela; Globais.nivel = 0;
+                Globais.logado = false;
+            }
         }
     }
 }

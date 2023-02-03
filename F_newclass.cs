@@ -12,12 +12,9 @@ namespace WindowsFormsApp2
 {
     public partial class F_newclass : Form
     {
-        F_escola f_newclass;
-        DataTable dt = new DataTable();
-        public F_newclass(F_escola f)
+        public F_newclass()
         {
             InitializeComponent();
-            f_newclass = f;
         }
 
         private void btn_classclose_Click(object sender, EventArgs e)

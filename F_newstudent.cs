@@ -10,14 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class F_aluno : Form
+    public partial class F_newstudent : Form
     {
-        F_escola f_aluno;
-        DataTable dt = new DataTable();
-        public F_aluno(F_escola f)
+        public F_newstudent()
         {
             InitializeComponent();
-            f_aluno = f;
         }
 
         private void btn_closestud_Click(object sender, EventArgs e)
@@ -28,8 +25,10 @@ namespace WindowsFormsApp2
         private void btn_cleanstud_Click(object sender, EventArgs e)
         {
             txt_namestud.Clear();
+            txt_nickstud.Clear();
             txt_classtud.Clear();
             txt_periodstud.Clear();
+            txt_telstud.Clear();
         }       
 
         private void btn_savestud_Click(object sender, EventArgs e)
@@ -37,8 +36,10 @@ namespace WindowsFormsApp2
             Aluno aluno = new Aluno();
 
             aluno.nome_aluno = txt_namestud.Text;
+            aluno.sobrenome_aluno = txt_nickstud.Text;
             aluno.curso_aluno = txt_classtud.Text;
             aluno.periodo_aluno = txt_periodstud.Text;
+            aluno.telefone_aluno = txt_telstud.Text;
 
             Banco.NovoAluno(aluno);
         }

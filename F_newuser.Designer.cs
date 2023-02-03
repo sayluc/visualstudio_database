@@ -105,7 +105,7 @@
             // lb_level
             // 
             this.lb_level.AutoSize = true;
-            this.lb_level.Location = new System.Drawing.Point(272, 199);
+            this.lb_level.Location = new System.Drawing.Point(237, 199);
             this.lb_level.Name = "lb_level";
             this.lb_level.Size = new System.Drawing.Size(33, 13);
             this.lb_level.TabIndex = 9;
@@ -114,7 +114,7 @@
             // lb_state
             // 
             this.lb_state.AutoSize = true;
-            this.lb_state.Location = new System.Drawing.Point(40, 238);
+            this.lb_state.Location = new System.Drawing.Point(51, 239);
             this.lb_state.Name = "lb_state";
             this.lb_state.Size = new System.Drawing.Size(117, 13);
             this.lb_state.TabIndex = 10;
@@ -122,10 +122,10 @@
             // 
             // bt_newuser
             // 
-            this.bt_newuser.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.bt_newuser.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.bt_newuser.Location = new System.Drawing.Point(12, 272);
             this.bt_newuser.Name = "bt_newuser";
-            this.bt_newuser.Size = new System.Drawing.Size(110, 32);
+            this.bt_newuser.Size = new System.Drawing.Size(110, 42);
             this.bt_newuser.TabIndex = 6;
             this.bt_newuser.Text = "Limpar";
             this.bt_newuser.UseVisualStyleBackColor = false;
@@ -133,10 +133,10 @@
             // 
             // bt_saveuser
             // 
-            this.bt_saveuser.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.bt_saveuser.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.bt_saveuser.Location = new System.Drawing.Point(195, 272);
             this.bt_saveuser.Name = "bt_saveuser";
-            this.bt_saveuser.Size = new System.Drawing.Size(110, 32);
+            this.bt_saveuser.Size = new System.Drawing.Size(110, 42);
             this.bt_saveuser.TabIndex = 7;
             this.bt_saveuser.Text = "Salvar";
             this.bt_saveuser.UseVisualStyleBackColor = false;
@@ -144,11 +144,11 @@
             // 
             // bt_closeuser
             // 
-            this.bt_closeuser.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.bt_closeuser.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.bt_closeuser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.bt_closeuser.Location = new System.Drawing.Point(364, 272);
             this.bt_closeuser.Name = "bt_closeuser";
-            this.bt_closeuser.Size = new System.Drawing.Size(110, 32);
+            this.bt_closeuser.Size = new System.Drawing.Size(110, 42);
             this.bt_closeuser.TabIndex = 8;
             this.bt_closeuser.Text = "Fechar";
             this.bt_closeuser.UseVisualStyleBackColor = false;
@@ -156,9 +156,9 @@
             // 
             // nud_level
             // 
-            this.nud_level.Location = new System.Drawing.Point(274, 215);
+            this.nud_level.Location = new System.Drawing.Point(240, 215);
             this.nud_level.Name = "nud_level";
-            this.nud_level.Size = new System.Drawing.Size(169, 20);
+            this.nud_level.Size = new System.Drawing.Size(147, 20);
             this.nud_level.TabIndex = 5;
             // 
             // cmb_state
@@ -166,14 +166,16 @@
             this.cmb_state.FormattingEnabled = true;
             this.cmb_state.Location = new System.Drawing.Point(43, 215);
             this.cmb_state.Name = "cmb_state";
-            this.cmb_state.Size = new System.Drawing.Size(169, 21);
+            this.cmb_state.Size = new System.Drawing.Size(146, 21);
             this.cmb_state.TabIndex = 4;
+            this.cmb_state.SelectedIndexChanged += new System.EventHandler(this.cmb_state_SelectedIndexChanged);
             // 
             // F_newuser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 316);
+            this.BackColor = System.Drawing.SystemColors.Info;
+            this.ClientSize = new System.Drawing.Size(486, 326);
             this.Controls.Add(this.cmb_state);
             this.Controls.Add(this.nud_level);
             this.Controls.Add(this.bt_closeuser);

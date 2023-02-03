@@ -20,10 +20,8 @@ namespace WindowsFormsApp2
         private void btn_genclean_Click(object sender, EventArgs e)
         {
             txt_gennameclass.Text = "";
-            txt_gennickclass.Text = "";
-            txt_genpassclass.Text = "";
+            txt_genareaclass.Text = "";
             cmb_genstateclass.Text = "";
-            nud_genlevelclass.Text = "";
             txt_genidclass.Text = "";
         }
 
@@ -31,40 +29,36 @@ namespace WindowsFormsApp2
         {
             int linha = dgv_class.SelectedRows[0].Index;
 
-            Usuario user = new Usuario();
-            user.id_usuario = Convert.ToInt32(txt_genidclass.Text);
-            user.nome_usuario = txt_gennameclass.Text;
-            user.username_usuario = txt_gennickclass.Text;
-            user.senha_usuario = txt_genpassclass.Text;
-            user.status_usuario = cmb_genstateclass.Text;
-            user.nivel_usuario = Convert.ToInt32(Math.Round(nud_genlevelclass.Value, 0));
+            Curso curso = new Curso();
+            curso.id_curso = Convert.ToInt32(txt_genidclass.Text);
+            curso.nome_curso = txt_gennameclass.Text;
+            curso.area_curso = txt_genareaclass.Text;          
+            curso.status_curso = cmb_genstateclass.Text;
 
-            Banco.AtualizarUsuario(user);
+            Banco.AtualizarCurso(curso);
 
             dgv_class[1, linha].Value = txt_gennameclass.Text;
         }
 
         private void btn_gennew_Click(object sender, EventArgs e)
         {
-            F_newuser f_newuser = new F_newuser();
-            f_newuser.ShowDialog();
-            dgv_class.DataSource = Banco.ObterUserID();
+            F_newclass f_newclass = new F_newclass();
+            f_newclass.ShowDialog();
+            dgv_class.DataSource = Banco.ObterClassID();
         }
 
         private void btn_generase_Click(object sender, EventArgs e)
         {
-            DialogResult resposta = MessageBox.Show("Confirmar Exclusão?", "Excluir Usuário", MessageBoxButtons.YesNo);
+            DialogResult resposta = MessageBox.Show("Confirmar Exclusão?", "Excluir Curso", MessageBoxButtons.YesNo);
 
             if (resposta == DialogResult.Yes)
             {
-                Banco.RemoverUsuario(txt_genidclass.Text);
+                Banco.RemoverCurso(txt_genidclass.Text);
                 dgv_class.Rows.Remove(dgv_class.CurrentRow);
 
                 txt_gennameclass.Text = "";
-                txt_gennickclass.Text = "";
-                txt_genpassclass.Text = "";
+                txt_genareaclass.Text = "";
                 cmb_genstateclass.Text = "";
-                nud_genlevelclass.Text = "";
                 txt_genidclass.Text = "";
             }
         }
@@ -78,20 +72,18 @@ namespace WindowsFormsApp2
             {
                 DataTable dt = new DataTable();
                 string userId = dgv.SelectedRows[0].Cells[0].Value.ToString();
-                dt = Banco.ObterDadosPorId(userId);
+                dt = Banco.ObterDadosPorIdClass(userId);
 
-                txt_genidclass.Text = dt.Rows[0].Field<Int64>("id_usuario").ToString();
-                txt_gennameclass.Text = dt.Rows[0].Field<string>("nome_usuario").ToString();
-                txt_gennickclass.Text = dt.Rows[0].Field<string>("username_usuario").ToString();
-                txt_genpassclass.Text = dt.Rows[0].Field<string>("senha_usuario").ToString();
-                cmb_genstateclass.Text = dt.Rows[0].Field<string>("status_usuario").ToString();
-                nud_genlevelclass.Text = dt.Rows[0].Field<Int64>("nivel_usuario").ToString();
+                txt_genidclass.Text = dt.Rows[0].Field<Int64>("id_curso").ToString();
+                txt_gennameclass.Text = dt.Rows[0].Field<string>("nome_curso");
+                txt_genareaclass.Text = dt.Rows[0].Field<string>("area_curso");
+                cmb_genstateclass.Text = dt.Rows[0].Field<string>("status_curso");
             }
         }
 
         private void F_genclass_Load(object sender, EventArgs e)
         {
-            dgv_class.DataSource = Banco.ObterUserID();
+            dgv_class.DataSource = Banco.ObterClassID();
 
             dgv_class.Columns[0].Width = 40;
             dgv_class.Columns[1].Width = 180;

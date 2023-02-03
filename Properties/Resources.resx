@@ -118,10 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="green" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\png-transparent-round-green-button-computer-icons-scalable-graphics-green-glossy-ball-miscellaneous-purple-color-thumbnail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bamarela" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\bamarela.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="red" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-red-ball-4-clip-art-number-5abc0493a9c331.1024022715222713796954.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bverde" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\bverde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bvermelha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\bvermelha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

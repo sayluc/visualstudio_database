@@ -12,7 +12,7 @@ namespace WindowsFormsApp2
 {
     public partial class F_genuser : Form
     {
-        public F_genuser(F_escola f)
+        public F_genuser()
         {
             InitializeComponent();
         }
@@ -81,10 +81,10 @@ namespace WindowsFormsApp2
                 dt = Banco.ObterDadosPorId(userId);
 
                 txt_geniduser.Text = dt.Rows[0].Field<Int64>("id_usuario").ToString();
-                txt_gennameuser.Text = dt.Rows[0].Field<string>("nome_usuario").ToString();
-                txt_gennickuser.Text = dt.Rows[0].Field<string>("username_usuario").ToString();
-                txt_genpassuser.Text = dt.Rows[0].Field<string>("senha_usuario").ToString();
-                cmb_genstateuser.Text = dt.Rows[0].Field<string>("status_usuario").ToString();
+                txt_gennameuser.Text = dt.Rows[0].Field<string>("nome_usuario");
+                txt_gennickuser.Text = dt.Rows[0].Field<string>("username_usuario");
+                txt_genpassuser.Text = dt.Rows[0].Field<string>("senha_usuario");
+                cmb_genstateuser.Text = dt.Rows[0].Field<string>("status_usuario");
                 nud_genleveluser.Text = dt.Rows[0].Field<Int64>("nivel_usuario").ToString();
             }
         }

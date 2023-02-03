@@ -63,9 +63,9 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap green {
+        internal static System.Drawing.Bitmap bamarela {
             get {
-                object obj = ResourceManager.GetObject("green", resourceCulture);
+                object obj = ResourceManager.GetObject("bamarela", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,19 @@ namespace WindowsFormsApp2.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap red {
+        internal static System.Drawing.Bitmap bverde {
             get {
-                object obj = ResourceManager.GetObject("red", resourceCulture);
+                object obj = ResourceManager.GetObject("bverde", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bvermelha {
+            get {
+                object obj = ResourceManager.GetObject("bvermelha", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
