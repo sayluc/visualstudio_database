@@ -587,6 +587,65 @@ namespace WindowsFormsApp2
             {
                 throw ex;
             }
+        }
+
+        public static DataTable ObterSalaID()
+        {
+
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConectarBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "SELECT * FROM tb_turma";
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                da.Fill(dt);
+                vcon.Close();
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static DataTable ObterDadosPorIdSala(string id)
+        {
+            SQLiteDataAdapter da = null;
+            DataTable dt = new DataTable();
+            try
+            {
+                var vcon = ConectarBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "SELECT * FROM tb_turma WHERE id_turma=" + id;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                da.Fill(dt);
+                vcon.Close();
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public static void RemoverSala(string id)
+        {
+            SQLiteDataAdapter da = null;
+            try
+            {
+                var vcon = ConectarBanco();
+                var cmd = vcon.CreateCommand();
+                cmd.CommandText = "DELETE FROM tb_turma WHERE id_turma=" + id;
+                da = new SQLiteDataAdapter(cmd.CommandText, vcon);
+                cmd.ExecuteNonQuery();
+                vcon.Close();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }// Fim das funções genéricas
     }
 }

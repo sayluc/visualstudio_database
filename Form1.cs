@@ -111,5 +111,16 @@ namespace WindowsFormsApp2
                 Globais.logado = false;
             }
         }
+
+        private void aToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            F_classroom f_Classroom = new F_classroom();
+            f_Classroom.ShowDialog();
+        }
+
+        private void F_escola_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

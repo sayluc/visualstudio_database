@@ -45,5 +45,10 @@ namespace WindowsFormsApp2
 
             Banco.NovoProfessor(professor);
         }
+
+        private void F_newteacher_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

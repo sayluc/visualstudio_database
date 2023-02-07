@@ -30,3 +30,5 @@ C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\en\WindowsFormsApp2
 C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\UC12Projeto.csproj.CopyComplete
 C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.F_classroom.resources
+C:\Users\lucca.fcruz\source\repos\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.F_visualdatabase.resources
